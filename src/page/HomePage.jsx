@@ -67,14 +67,14 @@ useEffect(() => {
   return (
     <div className=" w-full h-screen bg-[#040111]">
       <div className=" w-full h-full flex justify-center items-center">
-        <div className=" relative threeD w-[600px] h-[400px] threeD scale-[0.6] sm:scale-100 translate-x-[30%] sm:translate-x-0  rounded-[10px] ">
+        <div className=" relative threeD w-[600px] h-[400px] threeD scale-[0.6] sm:scale-100 translate-x-[20%] sm:translate-x-0  rounded-[10px] ">
           <div
             className={`  ${
               page.start ? "turn z-0 delay-[100ms] " : " z-60 delay-[600ms]"
             }   threeD bg-[#3f61b6] duration-500  absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
           >
             <div
-              className=" front bg-[#3f61b6] rounded-e-[5px]  w-[320px] -right-[10px] h-full p-[15px] absolute "
+              className=" front bg-[#3f61b6] rounded-e-[5px]  w-[320px] sm:-right-[10px]  h-full p-[15px] absolute "
             >
               <FirstCoverPage startPageChange={startPageChange} okay={page.start} />
             </div>
@@ -178,9 +178,9 @@ useEffect(() => {
             </div>
             <div
               onClick={endPageChange}
-              className=" back absolute bg-[#3f61b6] rounded-s-[5px]  p-[15px]   w-[320px] -right-[10px] h-full "
+              className=" back absolute bg-[#3f61b6] rounded-s-[5px]  p-[15px]   w-[320px] sm:-right-[10px] h-full "
             >
-              ten
+              
             </div>
           </div>
         </div>
