@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+   .closeL{
+    transform: rotateY(180deg);
+    transform-origin: right;
+   }
+   .closeR{
+    transform: rotateY(-180deg);
+    transform-origin: left;
+   }
+   .z-60{
+    z-index: 60;
+   }
+    .turn {
+        transform: rotateY(-180deg);
+    }
+    .threeD{
+        transform-style: preserve-3d;
+        transform-origin: left;
+        perspective: 1500px;
+    }
+    .threeDl{
+        transform-style: preserve-3d;
+        perspective: 1500px;
+        transform-origin: right;
+    }
+    .front{
+        transform: rotateY(0deg) translateZ(1px);
+    }
+    .back{
+        transform: rotateY(180deg) translateZ(1px);
+    }
+    .shade{
+        box-shadow: -5px 0 5px 1px rgb(66, 66, 66);
+    }
+    .shade2{
+        box-shadow: 5px 0 5px 1px rgb(66, 66, 66), inset 5px 0px 5px -5px rgb(66, 66, 66);
+
+    }
+  
+    rotateZero{
+        transform: rotateY(0deg);
+    }
+
+    .textShadow{
+        text-shadow: -3px 3px 1px black;
+    }
+    .shadowH{
+        text-shadow: -5px 5px 3px rgb(32, 31, 31);
+    }
+    .shadowB{
+        box-shadow: -4px 1px 2px -2px black;
+    }
+}
