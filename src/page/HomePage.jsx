@@ -67,7 +67,7 @@ useEffect(() => {
   return (
     <div className=" w-full h-screen bg-[#040111]">
       <div className=" w-full h-full flex justify-center items-center">
-        <div className=" relative threeD w-[600px] h-[400px] threeD  rounded-[10px] ">
+        <div className=" relative threeD w-[600px] h-[400px] threeD scale-[0.6] sm:scale-100 translate-x-[30%] sm:translate-x-0  rounded-[10px] ">
           <div
             className={`  ${
               page.start ? "turn z-0 delay-[100ms] " : " z-60 delay-[600ms]"
