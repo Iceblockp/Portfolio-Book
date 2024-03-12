@@ -131,8 +131,10 @@ const MySkills = ({SecondPageChange}) => {
       </div>
 
        {/* page No  */}
-       <div className=" flex justify-between text-xs absolute bottom-3 w-full text-center">
-      <button onClick={SecondPageChange} >
+       <div className=" flex justify-around text-xs absolute bottom-3 w-full text-center">
+        <div></div>
+        <div>3</div>
+        <button onClick={SecondPageChange} >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -144,13 +146,10 @@ const MySkills = ({SecondPageChange}) => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
             />
           </svg>
         </button>
-        <div>4</div>
-        <div></div>
-     
       </div>
     </div>
   );

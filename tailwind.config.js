@@ -15,6 +15,10 @@ export default {
         'heading':['Roboto',"sans-serif"],
 
       },
+      transitionProperty: {
+        'height': 'height',
+        'width': 'width',
+      },
     },
   },
   plugins: [],

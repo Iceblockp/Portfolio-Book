@@ -1,11 +1,11 @@
 import React from "react";
-import projectImage from "./project.png";
+import projectImage from "../assets/img/project.png";
 
 const LatestProject = ({thirdPageChange}) => {
   return (
     <div>
       <h1 className=" font-heading font-[900] text-lg text-center text-black ">
-        Latest Project{" "}
+         Project 2{" "}
       </h1>
 
       <div style={{backgroundImage: `url(${projectImage})` }} className={` bg-center bg-cover w-full h-[130px] `}></div>

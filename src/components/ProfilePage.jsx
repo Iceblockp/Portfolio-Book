@@ -1,8 +1,8 @@
 import React from "react";
 
-import cute from "./cute.jpg"
+import cute from "../assets/img/cute.jpg"
 
-const ProfilePage = ({ startPageChange, restartHandle }) => {
+const ProfilePage = ({ startPageChange, restartHandle ,contactMe}) => {
 
   
   return (
@@ -83,7 +83,7 @@ const ProfilePage = ({ startPageChange, restartHandle }) => {
         </a>
 
         <button
-          onClick={restartHandle}
+          onClick={contactMe}
           type="button"
           className=" py-2 px-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-sky-200 text-sky-500 hover:border-sky-600 hover:text-sky-600 disabled:opacity-50 disabled:pointer-events-none "
         >

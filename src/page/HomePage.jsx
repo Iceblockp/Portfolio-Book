@@ -2,16 +2,20 @@ import React, { useEffect, useState } from "react";
 import {
   ContactMe,
   Education,
+  LastCover,
   LatestProject,
   MySkills,
   ProfilePage,
+  ProjectFour,
   WorkExperience,
 } from "../components";
 import MyServices from "../components/MyServices";
 import FirstCoverPage from "../components/FirstCoverPage";
+import ProjectOne from "../components/ProjectOne";
+import ProjectThree from "../components/ProjectThree";
 
 const HomePage = () => {
-  const [restart,setRestart] = useState(true);
+  const [restart, setRestart] = useState(true);
   const [page, setPage] = useState({
     first: true,
     second: true,
@@ -26,23 +30,34 @@ const HomePage = () => {
   }
 
 
-const firstTurn = () => {
-  setPage(pre => ({
-    first: false,
-    second:false,
-    third:false,
-    fourth:false,
-    start:false,
-    end:false
-  }))
-}
+  const firstTurn = () => {
+    setPage(pre => ({
+      first: false,
+      second: false,
+      third: false,
+      fourth: false,
+      start: false,
+      end: false
+    }))
+  };
 
-useEffect(() => {
-  setTimeout(() => {
-    firstTurn();
-  }, 1000);
+  const contactMe = () => {
+    setPage({
+      first: true,
+      second: true,
+      third: true,
+      fourth: true,
+      start: true,
+      end: false,
+    })
+  }
 
-},[restart])
+  useEffect(() => {
+    setTimeout(() => {
+      firstTurn();
+    }, 1000);
+
+  }, [restart])
 
 
   const pageChange = () => {
@@ -67,11 +82,10 @@ useEffect(() => {
   return (
     <div className=" w-full h-screen bg-[#040111]">
       <div className=" w-full h-full flex justify-center items-center">
-        <div className=" relative threeD w-[600px] h-[400px] threeD scale-[0.6] sm:scale-100 translate-x-[20%] sm:translate-x-0  rounded-[10px] ">
+        <div className=" relative threeD w-[600px] h-[400px] threeD scale-[0.6] sm:scale-100 lg:scale-125  translate-x-[20%] sm:translate-x-0  rounded-[10px] ">
           <div
-            className={`  ${
-              page.start ? "turn z-0 delay-[100ms] " : " z-60 delay-[600ms]"
-            }   threeD bg-[#3f61b6] duration-500  absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
+            className={`  ${page.start ? "turn z-0 delay-[100ms] " : " z-60 delay-[600ms]"
+              }   threeD bg-[#3f61b6] duration-500  absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
           >
             <div
               className=" front bg-[#3f61b6] rounded-e-[5px]  w-[320px] sm:-right-[10px]  h-full p-[15px] absolute "
@@ -79,27 +93,26 @@ useEffect(() => {
               <FirstCoverPage startPageChange={startPageChange} okay={page.start} />
             </div>
             <div
-              
+
               className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
-              <ProfilePage restartHandle={restartHandle} startPageChange={startPageChange} />
+              <ProfilePage contactMe={contactMe} restartHandle={restartHandle} startPageChange={startPageChange} />
             </div>
           </div>
 
           {/* first and second page  */}
           <div
-            className={`  ${
-              page.first ? "turn z-0 delay-[200ms] " : " z-50 delay-[500ms] "
-            }   threeD  duration-500 absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
+            className={`  ${page.first ? "turn z-0 delay-[200ms] " : " z-50 delay-[500ms] "
+              }   threeD  duration-500 absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
           >
             <div
-              
+
               className=" front bg-white shade2 w-[280px] h-[360px] mt-[20px] p-[15px] absolute "
             >
               <WorkExperience pageChange={pageChange} />
             </div>
             <div
-            
+
               className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
               <Education pageChange={pageChange} />
@@ -107,80 +120,77 @@ useEffect(() => {
           </div>
 
           <div
-            className={`${
-              page.second ? "turn z-10 delay-[300ms] " : " z-40 delay-[400ms] "
-            }  threeD  duration-500 absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
+            className={`${page.second ? "turn z-10 delay-[300ms] " : " z-40 delay-[400ms] "
+              }  threeD  duration-500 absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
           >
             <div
-              
+
               className=" front bg-white shade2 w-[280px] h-[360px] mt-[20px] p-[15px] absolute "
             >
-              <MyServices SecondPageChange={SecondPageChange} />
+              <MySkills SecondPageChange={SecondPageChange} />
+
             </div>
             <div
-              
+
               className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
-              <MySkills SecondPageChange={SecondPageChange} />
+              <ProjectOne SecondPageChange={SecondPageChange} />
             </div>
           </div>
 
           <div
-            className={`${
-              page.third ? "turn z-20 delay-[400ms] " : " z-30 delay-[300ms] "
-            }  threeD  duration-500 absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
+            className={`${page.third ? "turn z-20 delay-[400ms] " : " z-30 delay-[300ms] "
+              }  threeD  duration-500 absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
           >
             <div
-              
+
               className=" front bg-white shade2 w-[280px] h-[360px] mt-[20px] p-[15px] absolute "
             >
               <LatestProject thirdPageChange={thirdPageChange} />
             </div>
             <div
-              
+
               className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
-              <ContactMe thirdPageChange={thirdPageChange} />
+              <ProjectThree thirdPageChange={thirdPageChange} />
             </div>
           </div>
 
           <div
-            className={`${
-              page.fourth ? "turn z-30 delay-[500ms] " : " z-20 delay-[200ms] "
-            }  threeD  duration-500 absolute top-0 right-0  h-full w-[50%]  rounded-e-[10px]  `}
+            className={`${page.fourth ? "turn z-30 delay-[500ms] " : " z-20 delay-[200ms] "
+              }  threeD  duration-500 absolute top-0 right-0  h-full w-[50%]  rounded-e-[10px]  `}
           >
             <div
-              onClick={fourthPageChange}
+
               className=" front bg-white shade2 w-[280px] h-[360px] mt-[20px] p-[15px] absolute "
             >
-              seven
+              <ProjectFour fourthPageChange={fourthPageChange} />
             </div>
             <div
-              onClick={fourthPageChange}
+
               className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
-              eight
+              <ContactMe fourthPageChange={fourthPageChange} />
             </div>
           </div>
 
           <div
-            className={`${
-              page.end ? "turn z-40 delay-[600ms] " : " z-10 delay-[100ms] "
-            } threeD   duration-500 absolute top-0  right-0 h-full w-[50%]  rounded-e-[10px] bg-[#3f61b6]  `}
+            className={`${page.end ? "turn z-40 delay-[600ms] " : " z-10 delay-[100ms] "
+              } threeD   duration-500 absolute top-0  right-0 h-full w-[50%]  rounded-e-[10px] bg-[#3f61b6]  `}
           >
             <div
               onClick={endPageChange}
               className=" front bg-white shade2 w-[280px] h-[360px] mt-[20px] p-[15px] absolute "
             >
-              <div className=" absolute bottom-0 ">
-                <button onClick={restartHandle} >to Start</button>
-              </div>
+              
+
             </div>
             <div
               onClick={endPageChange}
               className=" back absolute bg-[#3f61b6] rounded-s-[5px]  p-[15px]   w-[320px] sm:-right-[10px] h-full "
             >
-              
+              <LastCover firstTurn={firstTurn} />
+
             </div>
           </div>
         </div>

@@ -5,3 +5,5 @@ export {default as MySkills} from "./MySkills"
 export {default as MyServices } from "./MyServices";
 export { default as LatestProject } from "./LatestProject";
 export {default as ContactMe} from "./ContactMe";
+export {default as LastCover} from "./LastCover"
+export {default as ProjectFour} from "./ProjectFour"

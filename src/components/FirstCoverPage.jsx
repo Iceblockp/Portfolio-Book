@@ -25,21 +25,7 @@ const FirstCoverPage = ({ startPageChange, okay }) => {
     openAnimation.play();
   };
 
-  openAnimation.addEventListener("finish", () => {
-    startPageChange();
-    setTimeout(() => {
-      openAnimation.cancel();
-      oneAnimation.cancel();
-      twoAnimation.cancel();
-      threeAnimation.cancel();
-      fourAnimation.cancel();
-      fiveAnimation.cancel();
-      sixAnimation.cancel();
-      sevenAnimation.cancel();
-      eightAnimation.cancel();
-      nineAnimation.cancel();
-    }, 300);
-  });
+
 
   const oneKeyEffect = new KeyframeEffect(oneRef.current, xKeyframe, optionKey);
 
@@ -88,6 +74,22 @@ const FirstCoverPage = ({ startPageChange, okay }) => {
   const sevenAnimation = new Animation(sevenKeyEffect);
   const eightAnimation = new Animation(eightKeyEffect);
   const nineAnimation = new Animation(nineKeyEffect);
+
+  openAnimation.addEventListener("finish", () => {
+    startPageChange();
+    setTimeout(() => {
+      openAnimation.cancel();
+      oneAnimation.cancel();
+      twoAnimation.cancel();
+      threeAnimation.cancel();
+      fourAnimation.cancel();
+      fiveAnimation.cancel();
+      sixAnimation.cancel();
+      sevenAnimation.cancel();
+      eightAnimation.cancel();
+      nineAnimation.cancel();
+    }, 300);
+  });
 
   useEffect(() => {
     if (!okay) {
