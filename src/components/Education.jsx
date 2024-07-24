@@ -1,6 +1,6 @@
 import React from "react";
 
-const Education = ({pageChange}) => {
+const Education = ({ pageChange }) => {
   return (
     <div>
       <h1 className=" font-heading font-bold text-center mb-2 ">
@@ -63,7 +63,7 @@ const Education = ({pageChange}) => {
             Web Developer - InClass Student
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            In 2023 august, I started Learning web development at MMS IT for over 1 year. During My student life, I finish main 3 projects and many minor projects at the workshop in the first 6 months. And in the next 6 months, 
+            In 2023 august, I started Learning web development at MMS IT for over 1 year. During My student life, I finish main 3 projects and many minor projects at the workshop in the first 6 months. And in the next 6 months,
           </p>
         </div>
       </div>
@@ -91,19 +91,17 @@ const Education = ({pageChange}) => {
             <span>2020 - 2021</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            Web Developer - Company
+            Always continue learning
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ex ut
-            repudiandae repellat veniam adipisci quibusdam tempore totam porro.
-            Laborum .
+
           </p>
         </div>
       </div>
 
       {/* page No  */}
       <div className=" flex justify-between text-xs absolute bottom-3 w-full text-center">
-      <button onClick={pageChange} >
+        <button onClick={pageChange} >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -121,7 +119,7 @@ const Education = ({pageChange}) => {
         </button>
         <div>2</div>
         <div></div>
-     
+
       </div>
     </div>
   );

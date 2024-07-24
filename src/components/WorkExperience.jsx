@@ -1,6 +1,6 @@
 import React from "react";
 
-const WorkExperience = ({pageChange}) => {
+const WorkExperience = ({ pageChange }) => {
   return (
     <div>
       <h1 className=" font-heading font-bold text-center mb-2 ">
@@ -32,9 +32,7 @@ const WorkExperience = ({pageChange}) => {
             Web Developer - InClass Student
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ex ut
-            repudiandae repellat veniam adipisci quibusdam tempore totam porro.
-            Laborum .
+            At MMS IT, I learned frontend and backend development for over one year.
           </p>
         </div>
       </div>
@@ -65,9 +63,7 @@ const WorkExperience = ({pageChange}) => {
             Web Developer - WorkShop
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ex ut
-            repudiandae repellat veniam adipisci quibusdam tempore totam porro.
-            Laborum .
+            And I have done 3 frontend main workshop-projects with other 3 collaborators. Backend Project is in progress..
           </p>
         </div>
       </div>
@@ -98,9 +94,7 @@ const WorkExperience = ({pageChange}) => {
             Web Developer - Company
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ex ut
-            repudiandae repellat veniam adipisci quibusdam tempore totam porro.
-            Laborum .
+            Develop 3 full stack Projects with backend developer.
           </p>
         </div>
       </div>

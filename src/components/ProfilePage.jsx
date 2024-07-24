@@ -1,14 +1,16 @@
 import React from "react";
 
-import cute from "../assets/img/cute.jpg"
+import cute from "../assets/img/CV-form.png"
+import myPhoto from "../assets/img/profile.jpg"
 
-const ProfilePage = ({ startPageChange, restartHandle ,contactMe}) => {
 
-  
+const ProfilePage = ({ startPageChange, restartHandle, contactMe }) => {
+
+
   return (
     <div>
       <div className=" flex flex-col items-center ">
-        <div className=" w-[125px] h-[125px] bg-[url('https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/6/2020_6$largeimg_2106819729.jpg')] bg-center bg-cover rounded-full border-[3px] border-blue-700 "></div>
+        <img src={myPhoto} className=" rounded-full w-[125px] h-[125px] border-[3px] border-blue-700 object-cover object-center " alt="" />
         <h1 className=" font-[700] font-heading text-3xl ">Pyae Phyo Nyo</h1>
         <h3 className=" font-bold text-sky-500 ">Web Developer</h3>
         <div className=" flex gap-1 ">
@@ -69,15 +71,14 @@ const ProfilePage = ({ startPageChange, restartHandle ,contactMe}) => {
       </div>
       <div className=" mt-1">
         <p className=" text-xs leading-[.85rem] ">
-          Hi, I'm Gordon Felix, a Web Developer. Lorem ipsum dolar sit, amet
-          consectetur adipisicing elit. Aspernatur autem cum ipsa id qi{" "}
+          I’ve been diving into development field and I want to learn and do many project in this field. I want to go deep in programming field.
         </p>
       </div>
       <div className=" w-full flex justify-around mt-2 ">
         <a
           href={cute} download
           className=" py-2 px-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-sky-600 text-white hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          
+
         >
           Download CV
         </a>
