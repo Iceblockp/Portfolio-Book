@@ -29,11 +29,16 @@ const WorkExperience = ({ pageChange }) => {
             <span>2023 - 2024</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            Web Developer - InClass Student
+            WorkShop - &apos;4&apos; Projects
           </h1>
-          <p className=" text-xs leading-[0.8rem]">
-            At MMS IT, I learned frontend and backend development for over one year.
-          </p>
+          <div className=" text-xs leading-[0.8rem]">
+            <ol className=" text-sm grid grid-cols-2">
+              <li>1. Touche</li>
+              <li>2. Disyuting</li>
+              <li>3. Dashboard</li>
+              <li>4. E-commerce</li>
+            </ol>
+          </div>
         </div>
       </div>
 
@@ -57,14 +62,18 @@ const WorkExperience = ({ pageChange }) => {
                 />
               </svg>
             </span>
-            <span>2023 - 2024</span>
+            <span>2024 - 2025</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            Web Developer - WorkShop
+            Production Booking Project Experience
           </h1>
-          <p className=" text-xs leading-[0.8rem]">
-            And I have done 3 frontend main workshop-projects with other 3 collaborators. Backend Project is in progress..
-          </p>
+          <div className=" text-xs leading-[0.8rem]">
+            <ul className=" grid grid-cols-2 text-sm ">
+              <li>1. user role</li>
+              <li>2. clinic role</li>
+              <li>3. admin role</li>
+            </ul>
+          </div>
         </div>
       </div>
 

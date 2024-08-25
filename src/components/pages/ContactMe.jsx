@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser"
-import { messageError, messageSuccess } from './alert/message-alert';
+import { messageError, messageSuccess } from '../alert/message-alert';
 
-const ContactMe = ({ fourthPageChange }) => {
+const ContactMe = ({ endPageChange }) => {
 
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -73,8 +73,10 @@ const ContactMe = ({ fourthPageChange }) => {
 
 
       {/* page No  */}
-      <div className=" flex justify-between text-xs absolute bottom-3 w-full text-center">
-        <button onClick={fourthPageChange} >
+      <div className=" flex justify-between px-10 text-xs absolute bottom-3 w-full text-center">
+        <div></div>
+        <div>9</div>
+        <button onClick={endPageChange} >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -86,13 +88,10 @@ const ContactMe = ({ fourthPageChange }) => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
             />
           </svg>
         </button>
-        <div>6</div>
-        <div></div>
-
       </div>
     </div>
   )

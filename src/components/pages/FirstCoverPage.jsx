@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { mxKeyframe, optionKey, xKeyframe, yKeyframe } from "./keyFrame";
+import { mxKeyframe, optionKey, xKeyframe, yKeyframe } from "../keyFrame";
 
 const FirstCoverPage = ({ startPageChange, okay }) => {
   const openRef = useRef();

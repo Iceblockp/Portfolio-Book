@@ -1,17 +1,21 @@
 import React from 'react'
-import dashboard from "../assets/img/dashboard.png"
+import projectImage from "../../assets/img/card.png"
+import ReactIcon from '../icons/ReactIcon'
+import CssIcon from '../icons/CssIcon'
+import TailwindIcon from '../icons/TailwindIcon'
+import HtmlIcon from '../icons/HtmlIcon'
 
-const ProjectThree = ({ thirdPageChange }) => {
+const ProjectFour = ({ fourthPageChange }) => {
     return (
         <div>
             <h1 className=" font-heading font-[900] text-lg text-center text-black ">
-                Project 3{" "}
+                Project 4{" "}
             </h1>
 
-            <div style={{ backgroundImage: `url(${dashboard})` }} className={` bg-center bg-cover w-full h-[130px] `}></div>
+            <div style={{ backgroundImage: `url(${projectImage})` }} className={` bg-center bg-cover w-full h-[130px] `}></div>
             <div className=" flex justify-between mt-2 ">
-                <div className=" font-heading font-bold text-sm ">Dashboard with Api</div>
-                <a href="https://satoshi-update-with-real-api-sweetalert.vercel.app/" target="_black" className=" flex justify-center items-center gap-2 ">
+                <div className=" font-heading font-bold text-sm ">E-commerce App</div>
+                <a href="https://cart-management-chi.vercel.app/" target="_black" className=" flex justify-center items-center gap-2 ">
                     <div className=" text-xs text-sky-500 ">Live Preview </div>
                     <span className=" text-sky-500 ">
                         <svg
@@ -33,31 +37,44 @@ const ProjectThree = ({ thirdPageChange }) => {
             </div>
             <div className=" mt-1">
                 <h1 className=" text-xs font-bold font-heading">Tech Used:</h1>
-                <p className=" line-clamp-3 text-xs text-gray-600 leading-3 text-justify ">
-                    <span className=" text-black ">HTML, </span>
-                    <span className=" text-black ">Tailwind css, </span>
-                    <span>React and its various  libraries . </span>
-                </p>
+                <div className=' flex gap-[2px] '>
+                    <div className=" size-6 rounded-full border-[0.7px] border-sky-600 flex justify-center items-center">
+                        <HtmlIcon className=" size-4" />
+                    </div>
+                    <div className=" size-6 rounded-full border-[0.7px] border-sky-600 flex justify-center items-center">
+                        <CssIcon className=" size-4" />
+                    </div>
+                    <div className=" size-6 rounded-full border-[0.7px] border-sky-600 flex justify-center items-center">
+                        <TailwindIcon className=" size-4 fill-sky-600 " />
+                    </div>
+
+                    <div className=" size-6 rounded-full border-[0.7px] border-sky-600 flex justify-center items-center">
+                        <ReactIcon className=" size-4" />
+                    </div>
+                </div>
             </div>
             <div className=" w-full flex justify-around mt-2 ">
-                <a href="https://github.com/Iceblockp/satoshiUpdate-with-realApi-sweetalert.git" target="_blank"
+                <a href="https://github.com/Iceblockp/Cart-management.git" target="_blank"
 
                     className=" text-xs py-2 px-5 inline-flex items-center gap-x-2 font-semibold rounded-md border border-transparent bg-sky-600 text-white hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 >
                     Source Code
                 </a>
 
-                <button
-                    type="button"
+                <a
+                    target='blank'
+                    href='https://vercel.com/iceblockps-projects'
                     className=" py-2 px-5 inline-flex items-center gap-x-2 text-xs font-semibold rounded-md border border-sky-200 text-sky-500 hover:border-sky-600 hover:text-sky-600 disabled:opacity-50 disabled:pointer-events-none "
                 >
                     More Projects
-                </button>
+                </a>
             </div>
 
             {/* page No  */}
-            <div className=" flex justify-between text-xs absolute bottom-3 w-full text-center">
-                <button onClick={thirdPageChange} >
+            <div className=" flex justify-around text-xs absolute bottom-3 w-full text-center">
+                <div></div>
+                <div>7</div>
+                <button onClick={fourthPageChange} >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -69,16 +86,13 @@ const ProjectThree = ({ thirdPageChange }) => {
                         <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            d="M15.75 19.5 8.25 12l7.5-7.5"
+                            d="m8.25 4.5 7.5 7.5-7.5 7.5"
                         />
                     </svg>
                 </button>
-                <div>6</div>
-                <div></div>
-
             </div>
         </div>
     )
 }
 
-export default ProjectThree
+export default ProjectFour

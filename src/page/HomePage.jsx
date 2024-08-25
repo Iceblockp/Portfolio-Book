@@ -1,18 +1,7 @@
 import React, { useEffect, useState } from "react";
-import {
-  ContactMe,
-  Education,
-  LastCover,
-  LatestProject,
-  MySkills,
-  ProfilePage,
-  ProjectFour,
-  WorkExperience,
-} from "../components";
-import MyServices from "../components/MyServices";
-import FirstCoverPage from "../components/FirstCoverPage";
-import ProjectOne from "../components/ProjectOne";
-import ProjectThree from "../components/ProjectThree";
+
+import { playPage, playPageFlip } from "../components/function/audio";
+import { ContactMe, Education, FirstCoverPage, LastCover, LatestProject, MoreProject, MySkills, ProfilePage, ProjectFour, ProjectOne, ProjectThree, WorkExperience } from "../components/pages";
 
 const HomePage = () => {
   const [restart, setRestart] = useState(true);
@@ -27,6 +16,7 @@ const HomePage = () => {
 
   const restartHandle = () => {
     setRestart(!restart);
+    playPageFlip()
   }
 
 
@@ -39,6 +29,7 @@ const HomePage = () => {
       start: false,
       end: false
     }))
+    playPageFlip()
   };
 
   const contactMe = () => {
@@ -50,33 +41,87 @@ const HomePage = () => {
       start: true,
       end: false,
     })
+    playPageFlip()
   }
 
   useEffect(() => {
     setTimeout(() => {
       firstTurn();
     }, 1000);
-
   }, [restart])
 
 
   const pageChange = () => {
     setPage((pre) => ({ ...pre, first: !pre.first }));
+    if (page.start) {
+      setTimeout(() => {
+        playPage();
+      }, 300);
+    } else {
+      setTimeout(() => {
+        playPage();
+      }, 900);
+    }
   };
   const SecondPageChange = () => {
     setPage((pre) => ({ ...pre, second: !pre.second }));
+    if (page.second) {
+      setTimeout(() => {
+        playPage();
+      }, 300);
+    } else {
+      setTimeout(() => {
+        playPage();
+      }, 500);
+    }
   };
   const thirdPageChange = () => {
     setPage((pre) => ({ ...pre, third: !pre.third }));
+    if (page.start) {
+      setTimeout(() => {
+        playPage();
+      }, 300);
+    } else {
+      setTimeout(() => {
+        playPage();
+      }, 800);
+    }
   };
   const fourthPageChange = () => {
     setPage((pre) => ({ ...pre, fourth: !pre.fourth }));
+    if (page.start) {
+      setTimeout(() => {
+        playPage();
+      }, 300);
+    } else {
+      setTimeout(() => {
+        playPage();
+      }, 1000);
+    }
   };
   const startPageChange = () => {
     setPage((pre) => ({ ...pre, start: !pre.start }));
+    if (page.start) {
+      setTimeout(() => {
+        playPage();
+      }, 600);
+    } else {
+      setTimeout(() => {
+        playPage();
+      }, 300);
+    }
   };
   const endPageChange = () => {
     setPage((pre) => ({ ...pre, end: !page.end }));
+    if (page.start) {
+      setTimeout(() => {
+        playPage();
+      }, 300);
+    } else {
+      setTimeout(() => {
+        playPage();
+      }, 1300);
+    }
   };
 
   return (
@@ -84,17 +129,17 @@ const HomePage = () => {
       <div className=" w-full h-full flex justify-center items-center">
         <div className=" relative threeD w-[600px] h-[400px] threeD scale-[0.6] sm:scale-100 lg:scale-125  translate-x-[20%] sm:translate-x-0  rounded-[10px] ">
           <div
-            className={`  ${page.start ? "turn z-0 delay-[100ms] " : " z-60 delay-[600ms]"
-              }   threeD bg-[#3f61b6] duration-500  absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
+            className={`  ${page.start ? "turn z-0 delay-[100ms] " : " z-60 delay-[600ms]"}   threeD bg-[#3f61b6] duration-500  absolute top-0 right-0 h-full w-[50%]  rounded-e-[10px]  `}
           >
             <div
               className=" front bg-[#3f61b6] rounded-e-[5px]  w-[320px] sm:-right-[10px]  h-full p-[15px] absolute "
             >
               <FirstCoverPage startPageChange={startPageChange} okay={page.start} />
             </div>
+
             <div
 
-              className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
+              className=" back absolute bg-[#ffffff] shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
               <ProfilePage contactMe={contactMe} restartHandle={restartHandle} startPageChange={startPageChange} />
             </div>
@@ -170,7 +215,7 @@ const HomePage = () => {
 
               className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
-              <ContactMe fourthPageChange={fourthPageChange} />
+              <MoreProject fourthPageChange={fourthPageChange} />
             </div>
           </div>
 
@@ -179,11 +224,9 @@ const HomePage = () => {
               } threeD   duration-500 absolute top-0  right-0 h-full w-[50%]  rounded-e-[10px] bg-[#3f61b6]  `}
           >
             <div
-              onClick={endPageChange}
               className=" front bg-white shade2 w-[280px] h-[360px] mt-[20px] p-[15px] absolute "
             >
-              
-
+              <ContactMe endPageChange={endPageChange} />
             </div>
             <div
               onClick={endPageChange}
