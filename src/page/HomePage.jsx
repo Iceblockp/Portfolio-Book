@@ -215,7 +215,9 @@ const HomePage = () => {
 
               className=" back absolute bg-white shade p-[15px] mt-[20px] w-[280px] h-[360px] "
             >
-              <MoreProject fourthPageChange={fourthPageChange} />
+              <ContactMe fourthPageChange={fourthPageChange} />
+
+
             </div>
           </div>
 
@@ -223,10 +225,9 @@ const HomePage = () => {
             className={`${page.end ? "turn z-40 delay-[600ms] " : " z-10 delay-[100ms] "
               } threeD   duration-500 absolute top-0  right-0 h-full w-[50%]  rounded-e-[10px] bg-[#3f61b6]  `}
           >
-            <div
+            <div onClick={endPageChange}
               className=" front bg-white shade2 w-[280px] h-[360px] mt-[20px] p-[15px] absolute "
             >
-              <ContactMe endPageChange={endPageChange} />
             </div>
             <div
               onClick={endPageChange}
