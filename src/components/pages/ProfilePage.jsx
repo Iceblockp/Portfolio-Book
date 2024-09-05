@@ -2,6 +2,7 @@ import React from "react";
 
 import cute from "../../assets/img/CV-form.png"
 import myPhoto from "../../assets/img/profile.jpg"
+import cvForm from "../../assets/img/Mayangone.pdf"
 
 
 const ProfilePage = ({ startPageChange, restartHandle, contactMe }) => {
@@ -76,7 +77,7 @@ const ProfilePage = ({ startPageChange, restartHandle, contactMe }) => {
       </div>
       <div className=" w-full flex justify-around mt-2 ">
         <a
-          href={cute} download
+          href={cvForm} download
           className=" py-2 px-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-sky-600 text-white hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
 
         >

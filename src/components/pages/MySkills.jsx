@@ -12,7 +12,7 @@ const MySkills = ({ SecondPageChange }) => {
   return (
     <div>
       <h1 className=" font-[900] font-heading text-center text-lg ">
-        My Skills
+        My proficient Skills
       </h1>
       <div>
         <h3 className=" font-bold text-sm font-heading mt-3 ">Front-End</h3>
