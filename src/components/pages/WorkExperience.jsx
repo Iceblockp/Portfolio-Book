@@ -97,13 +97,13 @@ const WorkExperience = ({ pageChange }) => {
                 />
               </svg>
             </span>
-            <span>2020 - 2021</span>
+            <span>2025 - 2026</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            Web Developer - Company
+            In progress...
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            Develop 3 full stack Projects with backend developer.
+
           </p>
         </div>
       </div>

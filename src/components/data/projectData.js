@@ -54,7 +54,7 @@ export const projects = [
         preview: "https://cart-management-chi.vercel.app/",
         source: "https://github.com/Iceblockp/Cart-management.git",
         page: 1,
-        feature: ["Landing page"],
+        feature: ["search product", "filter By category", "add to cart", "remove from cart", "place order",],
     },
     {
         id: 5,
@@ -73,8 +73,8 @@ export const projects = [
         image: portfolio,
         preview: "https://portfolio-book-five.vercel.app/",
         source: "https://github.com/Iceblockp/Portfolio-Book",
-        page: 1,
-        feature: ["Landing page"],
+        page: 10,
+        feature: ["Animation Landing page", "contact with emailjs", "css animation", "javascript animation"],
     },
 ];
 
