@@ -53,13 +53,18 @@ const ProjectPage = () => {
 
 
                             <div className=" mt-2 ">
-                                <a href={data.source} target="_blank"
+                                {data.source ? (
 
-                                    className=" text-xs py-2 px-5 inline-flex items-center gap-x-2 font-semibold rounded-md border border-transparent bg-sky-600 text-white hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                                >
-                                    Source Code
-                                    <CodeIcon className=" size-5 stroke-white " />
-                                </a>
+                                    <a href={data.source} target="_blank"
+
+                                        className=" text-xs py-2 px-5 inline-flex items-center gap-x-2 font-semibold rounded-md border border-transparent bg-sky-600 text-white hover:bg-sky-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                                    >
+                                        Source Code
+                                        <CodeIcon className=" size-5 stroke-white " />
+                                    </a>
+                                ) : (
+                                    <div className=" text-xs py-2 px-5 inline-flex items-center gap-x-2 font-semibold rounded-md border border-transparent bg-sky-600 text-white disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Sorry, Can't get source code</div>
+                                )}
                             </div>
                         </div>
 

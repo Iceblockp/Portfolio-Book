@@ -4,13 +4,31 @@ import HtmlIcon from '../icons/HtmlIcon'
 import CssIcon from '../icons/CssIcon'
 import TailwindIcon from '../icons/TailwindIcon'
 import ReactIcon from '../icons/ReactIcon'
+import { projects } from '../data/projectData'
+import { useDispatch } from 'react-redux'
+import { open } from '../../store/slice/dialogSlice'
 
 const ProjectThree = ({ thirdPageChange }) => {
+    const dispatch = useDispatch()
     return (
         <div>
-            <h1 className=" font-heading font-[900] text-lg text-center text-black ">
-                More projects are in progress...
+            <h1 className=" font-heading font-[900] text-md text-center text-black ">
+                Production projects (In progress)
             </h1>
+
+
+            <div className=' w-full grid grid-cols-2 gap-4 '>
+
+                {projects.filter((el) => el.id > 6).map((project) => (
+                    <div key={project.id} onClick={() => dispatch(open(project.id))} style={{ boxShadow: "0px 0px 5px #6B7280" }} className=' cursor-pointer ' >
+                        <img className=' aspect-video ' src={project.image} alt="" />
+                        <h2 className=' tracking-tighter font-[900] text-black text-sm px-2 '>{project.title}</h2>
+                        <p className=' text-[10px] mb-2 tracking-tighter px-2 font-bold '>{project.page} landing page</p>
+                    </div>
+
+                ))}
+
+            </div>
 
 
 

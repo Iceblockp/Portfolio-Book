@@ -12,14 +12,14 @@ const LatestProject = ({ thirdPageChange }) => {
   const dispatch = useDispatch()
   return (
     <div>
-      <h1 className=" font-heading font-[900] text-lg text-center text-black ">
+      <h1 className=" pb-3 font-heading font-[900] text-lg text-center text-black ">
         Projects
       </h1>
 
 
       <div className=' w-full grid grid-cols-2 gap-4 '>
 
-        {projects.filter((el) => el.id > 4).map((project) => (
+        {projects.filter((el) => el.id > 4 && el.id < 7).map((project) => (
           <div key={project.id} onClick={() => dispatch(open(project.id))} style={{ boxShadow: "0px 0px 5px #6B7280" }} className=' cursor-pointer ' >
             <img className=' aspect-video ' src={project.image} alt="" />
             <h2 className=' tracking-tighter font-[900] text-black text-sm px-2 '>{project.title}</h2>
