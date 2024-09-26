@@ -7,6 +7,8 @@ import ReactIcon from "../icons/ReactIcon";
 import JsIcon from "../icons/JsIcon";
 import CssIcon from "../icons/CssIcon";
 import HtmlIcon from "../icons/HtmlIcon";
+import TailwindIcon from "../icons/TailwindIcon";
+import ReduxIcon from './../icons/ReduxIcon';
 
 const MySkills = ({ SecondPageChange }) => {
   return (
@@ -32,6 +34,22 @@ const MySkills = ({ SecondPageChange }) => {
             </div>
             <div className=" font-heading text-center text-xs font-bold tracking-tighter ">
               CSS
+            </div>
+          </div>
+          <div className=" w-[52px] h-12 border-b-2 border-e-2 border border-sky-500 rounded-md ">
+            <div className=" flex justify-center mt-1 ">
+              <TailwindIcon className=" h-6 w-6 fill-sky-500" />
+            </div>
+            <div className=" font-heading text-center text-xs font-bold tracking-tighter ">
+              Tailwind
+            </div>
+          </div>
+          <div className=" w-[52px] h-12 border-b-2 border-e-2 border border-sky-500 rounded-md ">
+            <div className=" flex justify-center mt-1 ">
+              <ReduxIcon className=" h-6 w-6 fill-sky-500 " />
+            </div>
+            <div className=" font-heading text-center text-xs font-bold tracking-tighter ">
+              RTK
             </div>
           </div>
 
