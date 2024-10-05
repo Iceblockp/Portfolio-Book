@@ -71,8 +71,8 @@ const ProfilePage = ({ startPageChange, restartHandle, contactMe }) => {
         </div>
       </div>
       <div className=" mt-1">
-        <p className=" text-xs leading-[.85rem] ">
-          I’ve been diving into development field and I want to learn and do many project in this field. I want to go deep in programming field.
+        <p className=" text-xs leading-[.85rem] text-justify ">
+          Hay! , I'm junior Frontend Developer with experience over 1 year and a strong foundation in creating dynamic and user-friendly web applications.
         </p>
       </div>
       <div className=" w-full flex justify-around mt-2 ">
@@ -95,7 +95,7 @@ const ProfilePage = ({ startPageChange, restartHandle, contactMe }) => {
 
       {/* page No  */}
       <div className=" flex justify-between text-xs absolute bottom-3 w-full text-center">
-        <button onClick={startPageChange} className=" bg-gray-300 rounded-lg ">
+        <button onClick={startPageChange} className=" bg-gray-300 rounded-lg size-4 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

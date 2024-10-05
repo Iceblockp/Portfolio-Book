@@ -29,7 +29,7 @@ const WorkExperience = ({ pageChange }) => {
             <span>2023 - 2024</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            WorkShop - &apos;4&apos; Projects
+            Frontend Developer(MMS IT WorkShop)
           </h1>
           <div className=" text-xs leading-[0.8rem]">
             <ol className=" text-sm grid grid-cols-2">
@@ -65,13 +65,13 @@ const WorkExperience = ({ pageChange }) => {
             <span>2024 - 2025</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            Production Booking Project Experience
+            On site Projects
           </h1>
           <div className=" text-xs leading-[0.8rem]">
-            <ul className=" grid grid-cols-2 text-sm ">
-              <li>1. user role</li>
-              <li>2. clinic role</li>
-              <li>3. admin role</li>
+            <ul className=" grid grid-cols-1 text-sm ">
+              <li>1.MedService(user)</li>
+              <li>2.MedService(dashboard)</li>
+              <li>3.MedService(Admin)</li>
             </ul>
           </div>
         </div>
@@ -79,7 +79,7 @@ const WorkExperience = ({ pageChange }) => {
 
       <div className=" border-s-2 border-sky-500 px-[10px] relative ">
         <div className=" w-3 h-3 bg-sky-500 rounded-full top-0 absolute -left-[7px]"></div>
-        <div>
+        {/* <div>
           <h2 className=" flex text-xs text-sky-500 ">
             <span>
               <svg
@@ -105,14 +105,15 @@ const WorkExperience = ({ pageChange }) => {
           <p className=" text-xs leading-[0.8rem]">
 
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* page No  */}
       <div className=" flex justify-around text-xs absolute bottom-3 w-full text-center">
         <div></div>
         <div>1</div>
-        <button onClick={pageChange} className="bg-gray-300 rounded-lg" >
+        <button onClick={pageChange} className="bg-gray-300 rounded-lg size-4
+         " >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

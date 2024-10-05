@@ -89,7 +89,7 @@ export const projects = [
         preview: "https://my-tele-medicine.vercel.app/",
         source: null,
         page: 20 + "+",
-        feature: ["Register/Login/Login with Google", "Dark/Light mode", "Notification", "Search Feature", "Home Page", "Services/Detail/Booking", "Clinics/Detail/Booking", "Clinic/Doctors", "Blog/Detail/Like/Comment/Save", "Questions/Answer", "Profile/Setting", "Chat/VideoCall"],
+        feature: ["Register/Login", "Dark/Light mode", "Notification", "Search Feature", "Home Page", "Services/Detail/Booking", "Clinics/Detail/Booking", "Clinic/Doctors", "Blog/Detail/Like/Comment/Save", "Questions/Answer", "Profile/Setting", "Chat/VideoCall"],
     },
     {
         id: 8,

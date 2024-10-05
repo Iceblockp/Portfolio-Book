@@ -14,8 +14,10 @@ const ProjectPage = () => {
     return (
         <>
             {view && (
-                <div style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} className=' bg-white fixed w-[90vw] h-[90vh] top-[5vh] left-[5vw] overflow-auto '>
-                    <button onClick={() => dispatch(close())} className=' absolute top-2 right-2'>X</button>
+                <div style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} className=' bg-white fixed w-[90vw] md:w-[70vw] h-[90vh] top-[5vh] md:left-[15vw] left-[5vw] overflow-auto '>
+                    <button onClick={() => dispatch(close())} className=' absolute top-2 right-2 size-5 border rounded-full border-gray-400 flex justify-center items-center text-red-400 '>
+                        x
+                    </button>
 
                     <div className=" p-4 flex flex-col gap-3 ">
                         <img src={data.image} className=' w-full aspect-video ' alt="" />

@@ -26,13 +26,13 @@ const Education = ({ pageChange }) => {
                 />
               </svg>
             </span>
-            <span>2020 - 2021</span>
+            <span>2017 - 2021</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            University of Education - Sagaing
+            Sagaing University
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            In 2017-2018, I got access to attend at SOUE and I studied till the third year.Cause the covid-19 , I stopped my education at university .
+            University Of Education
           </p>
         </div>
       </div>
@@ -60,10 +60,10 @@ const Education = ({ pageChange }) => {
             <span>2023 - 2024</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            Web Developer - InClass Student
+            MMS IT
           </h1>
           <p className=" text-xs leading-[0.8rem]">
-            In 2023 august, I started Learning web development at MMS IT for over 1 year. During My student life, I finish main 3 projects and many minor projects at the workshop in the first 6 months. And in the next 6 months,
+            Special Web Design & Web Application Development
           </p>
         </div>
       </div>
@@ -88,10 +88,10 @@ const Education = ({ pageChange }) => {
                 />
               </svg>
             </span>
-            <span>2020 - 2021</span>
+            <span>2024 -</span>
           </h2>
           <h1 className=" font-heading font-bold text-sm ">
-            Always continue learning
+            Continue learning
           </h1>
           <p className=" text-xs leading-[0.8rem]">
 
