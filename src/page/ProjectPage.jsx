@@ -45,7 +45,7 @@ const ProjectPage = () => {
                         </div>
 
                         <div className=" flex w-full items-center justify-between mt-[-20px] px-5 ">
-                            <div className=' flex gap-2  '>
+                            <div className=' flex gap-2 max-w-[60%] flex-wrap '>
                                 {data.tech.map((Icon, index) => (
                                     <div key={index} className=' size-8 border-2 border-sky-600 flex justify-center items-center rounded-full '>
                                         <Icon className=" size-6 fill-sky-600 " />

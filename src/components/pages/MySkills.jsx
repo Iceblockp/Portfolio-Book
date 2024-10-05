@@ -135,7 +135,7 @@ const MySkills = ({ SecondPageChange }) => {
       <div className=" flex justify-around text-xs absolute bottom-3 w-full text-center">
         <div></div>
         <div>3</div>
-        <button onClick={SecondPageChange} >
+        <button onClick={SecondPageChange} className=" size-4" >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

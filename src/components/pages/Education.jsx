@@ -101,7 +101,7 @@ const Education = ({ pageChange }) => {
 
       {/* page No  */}
       <div className=" flex justify-between text-xs absolute bottom-3 w-full text-center">
-        <button onClick={pageChange} >
+        <button onClick={pageChange} className=" size-4 " >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
