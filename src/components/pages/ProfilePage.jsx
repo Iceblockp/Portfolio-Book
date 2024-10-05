@@ -2,7 +2,7 @@ import React from "react";
 
 import cute from "../../assets/img/CV-form.png"
 import myPhoto from "../../assets/img/profile.jpg"
-import cvForm from "../../assets/img/Mayangone.pdf"
+import cvForm from "../../assets/img/resume.pdf"
 
 
 const ProfilePage = ({ startPageChange, restartHandle, contactMe }) => {
